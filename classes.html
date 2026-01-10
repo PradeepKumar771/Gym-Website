@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Apex Fitness classes - Strength training, HIIT, Boxing, Yoga and more">
+    <title>Classes & Schedule | Apex Fitness</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/scss/components.css">
+<link rel="stylesheet" href="assets/scss/footer.css">
+<link rel="stylesheet" href="assets/scss/layout.css">
+<link rel="stylesheet" href="assets/scss/pages.css">
+<link rel="stylesheet" href="assets/scss/responsive.css">
+<link rel="stylesheet" href="assets/scss/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">APEX<span>FITNESS</span></div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html" aria-current="page">Classes</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <!-- Classes Header -->
+        <section class="classes-intro">
+            <h1 class="section-title">ELITE <span>PROGRAMS</span></h1>
+            <p class="intro-text">Choose from our diverse range of expert-led classes designed to challenge and transform.</p>
+        </section>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">ALL CLASSES</button>
+            <button class="filter-btn" data-filter="strength">STRENGTH</button>
+            <button class="filter-btn" data-filter="cardio">CARDIO</button>
+            <button class="filter-btn" data-filter="combat">COMBAT</button>
+            <button class="filter-btn" data-filter="recovery">RECOVERY</button>
+        </div>
+
+        <!-- Classes Grid -->
+        <section class="classes-grid">
+            <div class="grid-container">
+                <article class="card class-detail-card strength" data-category="strength">
+                    <span class="level-tag">Advanced</span>
+                    <h3>Powerlifting Program</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 95%;"></span>
+                    </div>
+                    <p>Master the big three: squat, bench press, and deadlift. Advanced coaching for max strength development.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 90 min</span>
+                        <span><i class="fas fa-users"></i> 8 max</span>
+                    </div>
+                </article>
+
+                <article class="card class-detail-card cardio" data-category="cardio">
+                    <span class="level-tag">All Levels</span>
+                    <h3>HIIT Blast</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 90%;"></span>
+                    </div>
+                    <p>High-intensity intervals designed to torch calories and build explosive cardiovascular endurance.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-users"></i> 15 max</span>
+                    </div>
+                </article>
+
+                <article class="card class-detail-card strength" data-category="strength">
+                    <span class="level-tag">Intermediate</span>
+                    <h3>Olympic Lifting</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 85%;"></span>
+                    </div>
+                    <p>Learn the snatch and clean & jerk with precision coaching on technique and power development.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-users"></i> 10 max</span>
+                    </div>
+                </article>
+
+                <article class="card class-detail-card combat" data-category="combat">
+                    <span class="level-tag">All Levels</span>
+                    <h3>Boxing Fundamentals</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                    <p>Master footwork, combinations, and defense while getting an incredible full-body workout.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-users"></i> 12 max</span>
+                    </div>
+                </article>
+
+                <article class="card class-detail-card cardio" data-category="cardio">
+                    <span class="level-tag">Intermediate</span>
+                    <h3>CrossFit WOD</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 92%;"></span>
+                    </div>
+                    <p>Constantly varied functional movements performed at high intensity. The ultimate fitness challenge.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-users"></i> 20 max</span>
+                    </div>
+                </article>
+
+                <article class="card class-detail-card recovery" data-category="recovery">
+                    <span class="level-tag">All Levels</span>
+                    <h3>Athletic Yoga</h3>
+                    <div class="intensity-bar">
+                        <span style="width: 40%;"></span>
+                    </div>
+                    <p>Improve flexibility, balance, and mental focus with yoga sequences tailored for athletes.</p>
+                    <div class="class-meta">
+                        <span><i class="fas fa-clock"></i> 60 min</span>
+                        <span><i class="fas fa-users"></i> 25 max</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weekly Schedule -->
+        <section class="schedule-section">
+            <h2 class="section-title">WEEKLY <span>SCHEDULE</span></h2>
+            <div class="schedule-wrapper">
+                <div class="schedule-grid-advanced">
+                    <div class="time-header">TIME</div>
+                    <div class="day-header">MON</div>
+                    <div class="day-header">TUE</div>
+                    <div class="day-header">WED</div>
+                    <div class="day-header">THU</div>
+                    <div class="day-header">FRI</div>
+
+                    <div class="time-label">06:00 AM</div>
+                    <div class="class-entry">CrossFit WOD</div>
+                    <div class="class-entry">Athletic Yoga</div>
+                    <div class="class-entry">CrossFit WOD</div>
+                    <div class="class-entry">Athletic Yoga</div>
+                    <div class="class-entry">HIIT Blast</div>
+
+                    <div class="time-label">09:00 AM</div>
+                    <div class="class-entry">Powerlifting</div>
+                    <div class="class-entry">HIIT Blast</div>
+                    <div class="class-entry">Olympic Lifting</div>
+                    <div class="class-entry">Boxing</div>
+                    <div class="class-entry">CrossFit WOD</div>
+
+                    <div class="time-label">12:00 PM</div>
+                    <div class="class-entry">HIIT Blast</div>
+                    <div class="class-entry">Boxing</div>
+                    <div class="class-entry">HIIT Blast</div>
+                    <div class="class-entry">Powerlifting</div>
+                    <div class="class-entry">Athletic Yoga</div>
+
+                    <div class="time-label">05:00 PM</div>
+                    <div class="class-entry">Olympic Lifting</div>
+                    <div class="class-entry">CrossFit WOD</div>
+                    <div class="class-entry">Boxing</div>
+                    <div class="class-entry">HIIT Blast</div>
+                    <div class="class-entry">Powerlifting</div>
+
+                    <div class="time-label">07:00 PM</div>
+                    <div class="class-entry">Boxing</div>
+                    <div class="class-entry">Powerlifting</div>
+                    <div class="class-entry">Athletic Yoga</div>
+                    <div class="class-entry">CrossFit WOD</div>
+                    <div class="class-entry empty">Rest</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">APEX<span>FITNESS</span></div>
+                <p>Built for Athletes. Designed for Results.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="plans.html">Membership Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Apex Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

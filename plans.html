@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Fitness membership plans - Choose the perfect plan for your fitness journey">
+    <title>Membership Plans | Apex Fitness</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/scss/components.css">
+<link rel="stylesheet" href="assets/scss/footer.css">
+<link rel="stylesheet" href="assets/scss/layout.css">
+<link rel="stylesheet" href="assets/scss/pages.css">
+<link rel="stylesheet" href="assets/scss/responsive.css">
+<link rel="stylesheet" href="assets/scss/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">APEX<span>FITNESS</span></div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="plans.html" aria-current="page">Plans</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <!-- Plans Header -->
+        <section class="plans-intro">
+            <h1 class="section-title">MEMBERSHIP <span>PLANS</span></h1>
+            <p class="intro-text">Choose the plan that fits your goals. All plans include 24/7 access and premium facilities.</p>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+            <div class="grid-container">
+                <article class="card pricing-card">
+                    <div class="plan-header">
+                        <h3>STARTER</h3>
+                        <div class="price">
+                            <span class="currency">$</span>49
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                        <li><i class="fas fa-check"></i> Free WiFi</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
+                        <li><i class="fas fa-check"></i> Cardio & Weight Equipment</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Group Classes</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Personal Training</li>
+                    </ul>
+                    <button class="btn-primary select-plan" data-plan="Starter">SELECT PLAN</button>
+                </article>
+
+                <article class="card pricing-card featured">
+                    <div class="badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>PRO</h3>
+                        <div class="price">
+                            <span class="currency">$</span>120
+                            <span class="period">/3 months</span>
+                        </div>
+                        <p class="savings">Save $27 vs monthly</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Starter</li>
+                        <li><i class="fas fa-check"></i> All Group Classes</li>
+                        <li><i class="fas fa-check"></i> Sauna & Recovery Zone</li>
+                        <li><i class="fas fa-check"></i> Nutritional Guidance</li>
+                        <li><i class="fas fa-check"></i> Guest Passes (2/month)</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Personal Training</li>
+                    </ul>
+                    <button class="btn-primary select-plan" data-plan="Pro">SELECT PLAN</button>
+                </article>
+
+                <article class="card pricing-card">
+                    <div class="plan-header">
+                        <h3>ELITE</h3>
+                        <div class="price">
+                            <span class="currency">$</span>400
+                            <span class="period">/year</span>
+                        </div>
+                        <p class="savings">Save $188 vs monthly</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro</li>
+                        <li><i class="fas fa-check"></i> Personal Training (4 sessions/month)</li>
+                        <li><i class="fas fa-check"></i> Priority Class Booking</li>
+                        <li><i class="fas fa-check"></i> Unlimited Guest Passes</li>
+                        <li><i class="fas fa-check"></i> Free Merchandise</li>
+                        <li><i class="fas fa-check"></i> VIP Lounge Access</li>
+                    </ul>
+                    <button class="btn-primary select-plan" data-plan="Elite">SELECT PLAN</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Additional Benefits -->
+        <section class="benefits-section">
+            <h2 class="section-title">ALL PLANS <span>INCLUDE</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>No Contracts</h3>
+                    <p>Cancel anytime with no penalties or hidden fees</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h3>Mobile App</h3>
+                    <p>Book classes, track workouts, and access content</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                    <h3>Premium Equipment</h3>
+                    <p>State-of-the-art machines maintained weekly</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>Community</h3>
+                    <p>Join a supportive network of dedicated athletes</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+            <div class="faq-container">
+                <article class="faq-item">
+                    <h3>Can I freeze my membership?</h3>
+                    <p>Yes! You can freeze your membership for up to 3 months per year for medical or travel reasons.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Is there a joining fee?</h3>
+                    <p>No joining fees. The price you see is the price you pay.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Can I upgrade my plan later?</h3>
+                    <p>Absolutely! You can upgrade at any time and we'll prorate the difference.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">APEX<span>FITNESS</span></div>
+                <p>Built for Athletes. Designed for Results.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="plans.html">Membership Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Apex Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

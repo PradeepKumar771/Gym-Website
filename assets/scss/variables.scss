@@ -1,0 +1,41 @@
+// ==========================================
+// VARIABLES - Brand Colors, Typography & Mixins
+// ==========================================
+
+// Brand Colors
+$primary: #ff5722;
+$primary-hover: #e64a19;
+$bg-dark: #0f0f0f;
+$card-bg: #1a1a1a;
+$text-light: #ffffff;
+$text-muted: #a0a0a0;
+$border-color: rgba(255, 255, 255, 0.1);
+
+// Typography
+$main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Mixins for Reusability
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition-smooth {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@mixin glass-effect {
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid $border-color;
+}
+
+@mixin card-style {
+    background: $card-bg;
+    padding: 2.5rem;
+    border-radius: 12px;
+    @include transition-smooth;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}

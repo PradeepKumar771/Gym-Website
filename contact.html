@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Apex Fitness - Schedule a tour or ask us anything">
+    <title>Contact Us | Apex Fitness</title>
+   <link rel="stylesheet" href="assets/scss/main.css">
+   <link rel="stylesheet" href="assets/scss/components.css">
+<link rel="stylesheet" href="assets/scss/footer.css">
+<link rel="stylesheet" href="assets/scss/layout.css">
+<link rel="stylesheet" href="assets/scss/pages.css">
+<link rel="stylesheet" href="assets/scss/responsive.css">
+<link rel="stylesheet" href="assets/scss/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="logo">APEX<span>FITNESS</span></div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="plans.html">Plans</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="section-padding">
+        <!-- Contact Header -->
+        <section class="contact-intro">
+            <h1 class="section-title">JOIN THE <span>ELITE</span></h1>
+            <p class="intro-text">Ready to transform? Schedule a free tour or reach out with any questions.</p>
+        </section>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            aria-required="true"
+                            placeholder="John Doe">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            placeholder="john@example.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone"
+                            placeholder="(555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">I'm interested in</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="membership">Membership Information</option>
+                            <option value="tour">Facility Tour</option>
+                            <option value="personal-training">Personal Training</option>
+                            <option value="classes">Group Classes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Fitness Goals *</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            aria-required="true"
+                            placeholder="Tell us about your fitness goals and what you're looking for..."></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                    <p class="form-note">* Required fields</p>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <aside class="contact-info-section">
+                <h2>Get In Touch</h2>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>1234 Fitness Boulevard<br>Los Angeles, CA 90028</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@apexfitness.com">info@apexfitness.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <div>
+                        <h3>Hours</h3>
+                        <p>Open 24/7<br>Staff Available: Mon-Fri 6AM-10PM</p>
+                    </div>
+                </div>
+
+                <div class="social-connect">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Follow us on YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2 class="section-title">FIND <span>US</span></h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.1885912841684!2d-118.32894668478394!3d34.09836098060405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf2b5c3b3f85%3A0x7b3b3b3b3b3b3b3b!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123"
+                    loading="lazy"
+                    title="Apex Fitness Location Map"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">APEX<span>FITNESS</span></div>
+                <p>Built for Athletes. Designed for Results.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="plans.html">Membership Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Apex Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

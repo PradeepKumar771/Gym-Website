@@ -1,0 +1,118 @@
+// ==========================================
+// LAYOUT - Grid & Flexbox Systems
+// ==========================================
+
+@import 'variables';
+
+// Main Page Layout (Grid)
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+// Navigation (Flexbox)
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    @include glass-effect;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    span {
+        color: $primary;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    a {
+        text-decoration: none;
+        color: $text-light;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        @include transition-smooth;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $primary;
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after,
+        &[aria-current="page"]::after {
+            width: 100%;
+        }
+
+        &:hover,
+        &[aria-current="page"] {
+            color: $primary;
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $text-light;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+// Hero Section (Flexbox Centered)
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(45deg, rgba(255, 87, 34, 0.1), transparent);
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        font-weight: 900;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 1;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $text-muted;
+        margin-bottom: 2rem;
+        max-width: 700px;
+        position: relative;
+        z-index: 1;
+    }
+}

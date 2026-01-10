@@ -1,0 +1,74 @@
+// ==========================================
+// APEX FITNESS - MAIN SCSS FILE
+// Imports all partial SCSS files
+// Compile this file to generate main.css
+// ==========================================
+
+// 1. Import Variables & Mixins First
+@import 'variables';
+
+// 2. Import Layout System
+@import 'layout';
+
+// 3. Import Reusable Components
+@import 'components';
+
+// 4. Import Page-Specific Styles
+@import 'pages';
+
+// 5. Import Footer Styles
+@import 'footer';
+
+// 6. Import Responsive Styles
+@import 'responsive';
+
+// ==========================================
+// BASE STYLES & RESET
+// ==========================================
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font;
+    background-color: $bg-dark;
+    color: $text-light;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// ==========================================
+// UTILITY CLASSES
+// ==========================================
+
+.section-padding {
+    padding: 5rem 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    span {
+        color: $primary;
+    }
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: $text-muted;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
